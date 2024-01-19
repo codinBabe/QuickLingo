@@ -1,0 +1,1 @@
+QuickLingo is a dictionary app
