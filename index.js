@@ -1,1 +1,0 @@
-import mykey from './key';
