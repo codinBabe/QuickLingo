@@ -1,1 +1,1 @@
-QuickLingo is a dictionary app
+QuickLingo is a dictionary app that uses dictionary.com api to return word meaning and audio of user query.
