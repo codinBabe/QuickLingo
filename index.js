@@ -53,6 +53,8 @@ async function fetchData(word) {
 function displayResults(wordData) {
     // Remove existing content
     mainContainer.innerHTML = '';
+    
+    mainContainer.appendChild(createElement('h2', 'word_text', wordData.word));
 
     // Loop through phonetics to find the first one with non-empty audio and non-empty text
     let validPhonetic;

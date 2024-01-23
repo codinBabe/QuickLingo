@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Lato', sans-serif;
     background-color: #f8f5ec;
+    line-height: 1.5;
 }
 
 header, main {
@@ -45,7 +46,11 @@ form input {
 form input:focus {
     border-color: #ECA585; 
 }
-
+.word_text{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1F1F1F;
+}
 .phonetic-text {
     color: #ECA585;
     font-weight: bold; 
