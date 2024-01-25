@@ -69,6 +69,7 @@ form button {
 form button:hover {
     background-color: #D98F52;
 }
+
 .word_text{
     font-size: 1.5rem;
     margin: 0;
@@ -102,6 +103,7 @@ form button:hover {
     border: 1px solid #efefef;
     border-radius: 16px;
     overflow: hidden;
+    animation: fadeInDown 0.5s ease;
 }
 
 .part-of-speech-header {
@@ -130,6 +132,16 @@ footer {
     text-align: center;
     color: #383838;
 }
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}    
 
 /* Media Query*/
 @media screen and (min-width: 768px){
