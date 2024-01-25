@@ -32,21 +32,42 @@ body {
 form label {
     color: #383838;
 }
-
+.input-container {
+    position: relative;
+    display: flex;
+}
 form input {
     width: 100%;
     border: 2px solid #ccc;
     border-radius: 8px;
-    padding: 12px 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     color: #1F1F1F;
     padding: 10px 15px;
     margin-top: .5em;
     outline: none;
     transition: border-color 0.3s;
+    flex: 1;
 }
 
 form input:focus {
     border-color: #ECA585; 
+}
+form button {
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #ECA585;
+    color: #fff;
+    border: 1px solid #ECA585;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: .5em;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #D98F52;
 }
 .word_text{
     font-size: 1.5rem;

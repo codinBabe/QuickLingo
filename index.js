@@ -2,7 +2,7 @@
 let year = new Date().getFullYear();
 document.querySelector('.year').innerHTML = year;
 
-// Fecth data for default word on document load
+// Fetch data for default word on document load
 document.addEventListener('DOMContentLoaded', function () {
     const defaultWord = 'hello';
     wordInput.value = defaultWord;
@@ -22,11 +22,20 @@ const dictionaryForm = document.getElementById('dictionaryForm');
 const wordInput = document.getElementById('wordInput');
 const mainContainer = document.getElementById('main-container');
 
-dictionaryForm.addEventListener('submit', function (event) {
-    event.preventDefault();
+dictionaryForm.addEventListener('submit', function (e) {
+    e.preventDefault();
 
     const word = wordInput.value.trim();
 
+    if (word) {
+        fetchData(word);
+    }
+});
+
+// New event listener for search button click
+const searchButton = document.getElementById('searchButton');
+searchButton.addEventListener('click', function () {
+    const word = wordInput.value.trim();
     if (word) {
         fetchData(word);
     }

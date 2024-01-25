@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <header class="container">
         <div class="logo-container">
@@ -17,7 +19,10 @@
         </div>
         <form action="" id="dictionaryForm">
             <label for="text">Type a word
-                <input type="search" value="" id="wordInput">
+                <div class="input-container">
+                    <input type="search" value="" id="wordInput">
+                    <button type="button" id="searchButton">Search</button>
+                </div>
             </label>
         </form>
     </header>
@@ -28,4 +33,5 @@
     </footer>
     <script type="module" src="./index.js"></script>
 </body>
+
 </html>
